@@ -1,0 +1,17 @@
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/ConsoleApp1
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/ConsoleApp1.deps.json
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/ConsoleApp1.runtimeconfig.json
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/ConsoleApp1.dll
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/ConsoleApp1.pdb
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.csproj.AssemblyReference.cache
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.AssemblyInfo.cs
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.csproj.CopyComplete
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.dll
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/refint/ConsoleApp1.dll
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.pdb
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ConsoleApp1.genruntimeconfig.cache
+/home/sultonxon/Github/OAuthApp/ConsoleApp1/obj/Debug/net7.0/ref/ConsoleApp1.dll
