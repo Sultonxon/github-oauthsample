@@ -20,16 +20,11 @@ function GHCallback(props: any) {
                 console.log(e);
                 console.log(code);
                 
+                
             });
         }
     })
-    return (
-        <div>
-            <iframe >
-
-            </iframe>
-        </div>
-    )
+    return <h1>GH Callback</h1>
 }
 
 export default GHCallback;
