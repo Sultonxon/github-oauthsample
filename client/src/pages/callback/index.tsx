@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -7,6 +7,9 @@ function GHCallback(props: any) {
     console.log(props);
     const router = useRouter();
     const code = router.query['code'];
+
+    
+
     console.log(code);
     useEffect( () =>{
         if(code){
@@ -15,7 +18,7 @@ function GHCallback(props: any) {
             }).then(res =>{
                 console.log('response', res);
                 console.log('code', code);
-                
+                localStorage.set
             }).catch(e =>{
                 console.log(e);
                 console.log(code);

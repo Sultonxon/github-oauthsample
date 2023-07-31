@@ -34,6 +34,10 @@ public class AuthController : ControllerBase
         return Ok(new { Token = _authService.AuthenticateGithub(model) });
     }
 
-
+    [HttpPost("google")]
+    public async Task<IActionResult> GoogleAuthenticate([FromBody] ExternalAuthModel model)
+    {
+        return Ok(new { Token = _authService.AuthenticateGoogle(model) });
+    }
 
 }

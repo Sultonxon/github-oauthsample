@@ -13,4 +13,6 @@ public interface IAuthService
     Task<string> Authenticate(AuthModel model);
 
     Task<string> AuthenticateGithub(ExternalAuthModel model);
+
+    Task<string> AuthenticateGoogle(ExternalAuthModel model);
 }

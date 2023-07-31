@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Security.Authentication;
 using System.Security.Claims;
 using System.Text;
-using System.Text.Json.Nodes;
+using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Linq;
@@ -91,6 +91,34 @@ public class AuthService : IAuthService
         var jwt = GenerateToken(user);
         tokens[model.AuthToken] = jwt;
         return jwt;
+    }
+
+    public async Task<string> AuthenticateGoogle(ExternalAuthModel model)
+    {
+        var google = _configuration.GetSection("Authentication").GetSection("google");
+        var clientId = google["client_id"];
+        var clientSecret = google["client_secret"];
+
+        var settings = new GoogleJsonWebSignature.ValidationSettings()
+        {
+            Audience = new List<string>() { clientId }
+        };
+        try
+        {
+            var payload = await GoogleJsonWebSignature.ValidateAsync(model.AuthToken, settings);
+            var email = payload.Email;
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user is null)
+            {
+                throw new UnauthorizedAccessException();
+            }
+
+            return GenerateToken(user);
+        }
+        catch (Exception e)
+        { 
+            throw new UnauthorizedAccessException();
+        }
     }
     
     private string GenerateToken(IdentityUser user)
